@@ -1,0 +1,42 @@
+@keyframes grow {
+    from {font-size: 20px;}
+    to {font-size: 24px; color:purple;}
+}
+
+@keyframes move {
+0% {left: 0%}
+25% {left: 10%}
+50% {left: 25%}
+75% {left: 10%}
+95% {left: 0.1%}
+}
+
+div {
+    animation-name: grow;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    margin-left: 5px;
+    
+}
+
+.move {
+    position: relative;
+    animation-name: move;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    color: orange;
+}
+
+img {
+    height: 20%
+}
+
+iframe {
+    margin: 0 0 0 2;
+    overflow:auto;
+    border:.01 3px solid green;
+    width:352px; 
+    height:342px; 
+
+  }
