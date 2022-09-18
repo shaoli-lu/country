@@ -1,9 +1,9 @@
 let pic = document.getElementById('pic');
-/* 
+
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 
-}) */
+})
 
 function showCountry() 
 {
