@@ -21,7 +21,7 @@ function showCountry()
                 const countryCardImage = document.createElement('img');
                 countryCard.innerHTML =  
                 
-                '</br>' + 'English: ' +country.name.common + 
+                '</br>' + 'Name: ' +country.name.common + 
                 // '</br>' + 'Chinese: ' + country.translations.zho.common + 
                 '</br>' + 'Capital: ' + country.capital + 
                 // '</br>' + 'Language: ' + country.languages + 
