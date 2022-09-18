@@ -28,13 +28,23 @@ div {
     color: orange;
 }
 
+#move {
+    margin-left: 95px;
+}
 img {
     height: 25%;
     border: 1px solid black;
 }
 
-.countryCardImage {
-    border: 20px solid red;
+.img-frame-cap {
+    width: 200px;
+    background: #fff;
+    padding: 18px 18px 2px 18px;
+    border: 1px solid #999;
+  }
+
+#countryCardImage {
+    border: 1px solid black;
 }
 
 iframe {

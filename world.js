@@ -19,6 +19,7 @@ function showCountry()
             {
                 const countryCard = document.createElement('div');
                 const countryCardImage = document.createElement('img');
+                countryCardImage.id ='countryCardImage';
                 countryCard.innerHTML =  
                 
                 '</br>' + 'Name: ' +country.name.common + 
