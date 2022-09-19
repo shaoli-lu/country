@@ -1,5 +1,5 @@
 let pic = document.getElementById('pic');
-
+let zw ='';
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 
@@ -20,10 +20,11 @@ function showCountry()
                 const countryCard = document.createElement('div');
                 const countryCardImage = document.createElement('img');
                 countryCardImage.id ='countryCardImage';
-                countryCard.innerHTML =  
+                if (country.translations.zho == undefined) { zw = '中国';} else { zw = country.translations.zho.common; }
                 
+                countryCard.innerHTML =  
                 '</br>' + 'Name: ' +country.name.common + 
-                // '</br>' + 'Chinese: ' + country.translations.zho.common + 
+                '</br>' + 'Chinese: ' + zw + 
                 '</br>' + 'Capital: ' + country.capital + 
                 // '</br>' + 'Language: ' + country.languages + 
                 '</br>' + 'Population: ' + country.population.toLocaleString("en-US") + 
