@@ -14,11 +14,18 @@ function showCountry()
         if (xhr.status == 200) 
         {
             let countries = JSON.parse(this.response);
-            // countries.push().sort;
-            
+            // sort by common name
             countries.sort(function (a, b) {
                 return a.name.common.localeCompare(b.name.common);
             });
+
+             // sort by population desc
+            //  countries.country.population.reverse();
+           /*  countries.sort(function (a, b) {
+                return a.population.toLocaleString("en-US").localeCompare(b.population.toLocaleString("en-US"));
+            }); */
+
+
             countries.forEach(  country => 
             {
                 const countryCard = document.createElement('div');
