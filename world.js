@@ -1,6 +1,6 @@
 let pic = document.getElementById('pic');
 let zw ='';
-let i = 1;
+let i = 0;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 
@@ -64,6 +64,7 @@ function showCountry()
             });
         }
     }
+   
 xhr.send();
 
 }
