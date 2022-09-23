@@ -1,5 +1,6 @@
 let pic = document.getElementById('pic');
 let zw ='';
+let i = 1;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 
@@ -7,25 +8,36 @@ showCountry();
 
 function showCountry() 
 {
+  
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
     xhr.onload = function() 
     {
         if (xhr.status == 200) 
         {
+            i++;
             let countries = JSON.parse(this.response);
             // sort by common name
-            countries.sort(function (a, b) {
+           /*  countries.sort(function (a, b) {
                 return a.name.common.localeCompare(b.name.common);
-            });
+            }); */
 
              // sort by population desc
             //  countries.country.population.reverse();
-           /*  countries.sort(function (a, b) {
+        /*     countries.sort(function (a, b) {
                 return a.population.toLocaleString("en-US").localeCompare(b.population.toLocaleString("en-US"));
             }); */
-
-
+        if ( i%2 == 0) {
+            countries.sort(function (x, y) {
+                let a = x.name.common.toUpperCase(),
+                    b = y.name.common.toUpperCase();
+                return a == b ? 0 : a > b ? 1 : -1;
+            });
+        } else {
+            countries.sort(function (a, b) {
+                return b.population - a.population;
+            });
+        }
             countries.forEach(  country => 
             {
                 const countryCard = document.createElement('div');
@@ -40,7 +52,7 @@ function showCountry()
                 
                 countryCard.innerHTML =  
                 '</br>' + 'Name: ' +country.name.common + 
-                '</br>' + 'Chinese: ' + zw + 
+                '</br>' + '名称: ' + zw + 
                 '</br>' + 'Capital: ' + country.capital + 
                 // '</br>' + 'Language: ' + country.languages + 
                 '</br>' + 'Population: ' + country.population.toLocaleString("en-US") + 
@@ -53,6 +65,7 @@ function showCountry()
         }
     }
 xhr.send();
+
 }
 
 pic.addEventListener('click', showCountry)
