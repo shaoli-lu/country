@@ -60,9 +60,8 @@ function showCountry()
                 '</br>' + 'Capital: ' + country.capital + 
                 // '</br>' + 'Language: ' + country.languages + 
                 '</br>' + 'Population: ' + country.population.toLocaleString("en-US") + 
-                '</br>' + 'Area: ' + country.area.toLocaleString("en-US") + 
+                '</br>' + 'Area(sq km): ' + country.area.toLocaleString("en-US") + 
                 '</br>' + 'Car-Side: ' + capitalize(country.car.side) + 
-                '</br>';
                 '</br>' + 'Timezone: ' + country.timezones[0] + 
                 '</br>';
                 countryCardImage.src = country.flags.png;
