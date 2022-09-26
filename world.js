@@ -1,6 +1,7 @@
 let pic = document.getElementById('pic');
 let zw ='';
 let i = 0;
+const refreshTime =60000;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 
@@ -77,6 +78,7 @@ xhr.send();
 }
 
 pic.addEventListener('click', showCountry)
+setInterval(showCountry, refreshTime)
 
 
  
