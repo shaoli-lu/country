@@ -63,7 +63,7 @@ function showCountry()
                 '</br>' + 'Population: ' + country.population.toLocaleString("en-US") + 
                 '</br>' + 'Area(sq km): ' + country.area.toLocaleString("en-US") + 
                 '</br>' + 'Car-Side: ' + capitalize(country.car.side) + 
-                '</br>' + 'Timezone: ' + country.timezones[0] + 
+                // '</br>' + 'Timezone: ' + country.timezones[0] + 
                 '</br>';
                 countryCardImage.src = country.flags.png;
                 countryCard.appendChild(countryCardImage);
