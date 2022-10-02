@@ -1,7 +1,7 @@
 let pic = document.getElementById('pic');
 let zw ='';
 let i = 1, j=1;
-const refreshTime =60000;
+const refreshTime =8640000;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
 })
