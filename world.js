@@ -1,6 +1,6 @@
 let pic = document.getElementById('pic');
 let zw ='';
-let i = 0;
+let i = 1;
 const refreshTime =60000;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
@@ -20,7 +20,7 @@ function showCountry()
     {
         if (xhr.status == 200) 
         {
-            i++;
+           
             let countries = JSON.parse(this.response);
             // sort by common name
            /*  countries.sort(function (a, b) {
@@ -56,6 +56,7 @@ function showCountry()
                 else {zw = '中国'; }
                 
                 countryCard.innerHTML =  
+                '</br>' + 'Ranking: ' + i + 
                 '</br>' + 'Name: ' +country.name.common + 
                 '</br>' + '名称: ' + zw + 
                 '</br>' + 'Capital: ' + country.capital + 
@@ -68,8 +69,9 @@ function showCountry()
                 countryCardImage.src = country.flags.png;
                 countryCard.appendChild(countryCardImage);
                 document.getElementById('feed').appendChild(countryCard);
-            
+                i++;
             });
+            
         }
     }
    
