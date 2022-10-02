@@ -1,10 +1,9 @@
 let pic = document.getElementById('pic');
 let zw ='';
-let i = 1;
+let i = 1, j=1;
 const refreshTime =60000;
 document.addEventListener('DOMContentLoaded', function() {
 showCountry();
-
 })
 
 function capitalize(str){
@@ -32,11 +31,14 @@ function showCountry()
         /*     countries.sort(function (a, b) {
                 return a.population.toLocaleString("en-US").localeCompare(b.population.toLocaleString("en-US"));
             }); */
-        if ( i%2 == 0) {
-            countries.sort(function (x, y) {
+        if ( j%2 == 0) {
+          /*   countries.sort(function (x, y) {
                 let a = x.name.common.toUpperCase(),
                     b = y.name.common.toUpperCase();
                 return a == b ? 0 : a > b ? 1 : -1;
+            }); */
+            countries.sort(function (a, b) {
+                return b.area - a.area;
             });
         } else {
             countries.sort(function (a, b) {
@@ -71,12 +73,14 @@ function showCountry()
                 document.getElementById('feed').appendChild(countryCard);
                 i++;
             });
-            
+            j++;
+          
         }
     }
    
 xhr.send();
-
+document.getElementById('feed').innerHTML='';
+i = 1;
 }
 
 pic.addEventListener('click', showCountry)
