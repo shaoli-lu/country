@@ -64,7 +64,7 @@ function showCountry() {
 
           countryCard.innerHTML =
             '</br>' + 'Ranking: ' + i +
-            '</br>' + 'Name: ' + country.name.common +
+            '</br>' + 'Name: ' + '<span>' + country.name.common + '</span>'+
             '</br>' + '名称: ' + zw +
             '</br>' + 'Capital: ' + country.capital +
             // '</br>' + 'Language: ' + country.languages +
