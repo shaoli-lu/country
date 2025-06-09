@@ -1,6 +1,6 @@
 @keyframes grow {
-    from {font-size: 20px;}
-    to {font-size: 24px; color:purple;}
+  from {font-size: 20px;}
+  to {font-size: 24px; color:purple;}
 }
 
 @keyframes move {
@@ -13,125 +13,125 @@
 
 div {
 /*     animation-name: grow;
-    animation-duration: 60s;
-    animation-fill-mode: forwards;
-    margin: 5px; */
-    font-size: 24px; color:purple;
-    margin: 5px; 
+  animation-duration: 60s;
+  animation-fill-mode: forwards;
+  margin: 5px; */
+  font-size: 24px; color:purple;
+  margin: 5px; 
 }
 
 .move {
-    position: relative;
-    animation-name: move;
-    animation-duration: 60s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    color: orange;
+  position: relative;
+  animation-name: move;
+  animation-duration: 60s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  color: orange;
 }
 
 #move {
-    margin-left: 55px;
+  margin-left: 55px;
 }
 img {
-    /* height: 25%; */
-    border: 1px solid black;
+  /* height: 25%; */
+  border: 1px solid black;
 }
 
 .img-frame-cap {
-    width: 200px;
-    background: #fff;
-    padding: 18px 18px 2px 18px;
-    border: 1px solid #999;
-  }
+  width: 200px;
+  background: #fff;
+  padding: 18px 18px 2px 18px;
+  border: 1px solid #999;
+}
 
 #countryCardImage {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 iframe {
-    margin: 0 0 0 2;
-    overflow:auto;
-    border:.01 3px solid green;
-    width:352px; 
-    height:342px; 
+  margin: 0 0 0 2;
+  overflow:auto;
+  border:.01 3px solid green;
+  width:352px; 
+  height:342px; 
 
-  }
+}
 
-   
- /* For mobile phones: */
+ 
+/* For mobile phones: */
 [class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+  width: 100%;
+}
 
-  /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
-  body {
-    font-size: 30px;
-  }
+body {
+  font-size: 30px;
+}
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
-  body {
-    font-size: 15px;
-  }
+body {
+  font-size: 15px;
+}
 }
 
 /* If the screen size is 600px wide or less, hide the element */
 @media only screen and (max-width: 600px) {
-  div.example {
-    display: none;
-  }
+div.example {
+  display: none;
+}
 }
 
 @media only screen and (orientation: landscape) {
-  body {
-    background-color: lightblue;
-  }
+body {
+  background-color: lightblue;
+}
 }
 
 img {
-  width: 350px;
-  height: auto;
+width: 350px;
+height: auto;
 }
 
 
 video {
-  width: 100%;
-  height: auto;
-  align-items: center;
+width: 100%;
+height: auto;
+align-items: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -150,37 +150,37 @@ video {
 @media only screen and (min-width: 1200px) {}
 
 #pic {
-    width: 350px;
-    height: auto;
-  }
+  width: 350px;
+  height: auto;
+}
 
 .search-container {
-  display: flex;
-  align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  padding: 5px;
+display: flex;
+align-items: center;
+background-color: #f2f2f2;
+border-radius: 5px;
+padding: 5px;
 }
 
 #search-input {
-  border: none;
-  outline: none;
-  font-size: 16px;
-  padding: 5px 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  width: 200px;
-  margin-right: 10px;
+border: none;
+outline: none;
+font-size: 16px;
+padding: 5px 10px;
+background-color: #f2f2f2;
+border-radius: 5px;
+width: 200px;
+margin-right: 10px;
 }
 
 #search-input:focus {
-  background-color: #fff;
+background-color: #fff;
 }
 
 #search-input::placeholder {
-  color: #999;
+color: #999;
 }
 
 #search-input:focus::placeholder {
-  color: #666;
+color: #666;
 }
